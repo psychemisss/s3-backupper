@@ -1,3 +1,9 @@
+"""
+Copyright © psychemisss 2022-2023 - https://github.com/psychemisss
+Description: S3 automatic backup tool
+Version: 1.0.0
+"""
+
 import os
 import sys
 import time
