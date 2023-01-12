@@ -10,17 +10,22 @@ from dotenv import load_dotenv
 from tools.FileManager import FileManager
 from tools.S3Manager import S3Manager
 from tools.Logger import Logger
+from tools.ConfigLoader import ConfigLoader
 log = Logger(__name__)
 load_dotenv()
 
 
 def main():
+    config = ConfigLoader()
+
     log.success('Starting backup...')
     fm = FileManager(current_path=os.path.realpath(os.path.dirname(__file__)))
     target_directory_path = fm.search_target_dir()
     backup_path, backup_name = fm.create_backup(target_directory_path)
 
-    # TODO: Get configuration using fm.config property
+    # TODO:
+    #  - Get configuration using fm.config property
+    #  - Make a loop for each profile
 
     s3 = S3Manager()
     s3.upload_file(backup_path + ".zip", s3.default_bucket_name, backup_name + ".zip")

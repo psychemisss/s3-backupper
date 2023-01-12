@@ -23,10 +23,11 @@ _All listed bellow parameters required for start._
 * `S3_SECRET_KEY` - The secret key to use for the S3 endpoint.
 * `S3_BUCKET_NAME` - The name of the bucket to store the backups in.
 * `BACKUP_TARGET_DIR` - The directory to back up.
-* `BACKUP_INTERVAL` - The interval between backups.
+* `BACKUP_INTERVAL` - The interval between backups. _(In minutes)_
 
 **TODO**
-* [ ] Add support for multiple worlds
+* [ ] Add support for multiple files to backup
 * [ ] Write tests
 * [ ] Configuration file for storing env's
 * [ ] Running multiple backups (async?)
+* [ ] Upload .env template to repo

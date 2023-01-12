@@ -1,0 +1,17 @@
+{
+  "minecraft_world_backup": {
+    "S3_ENDPOINT_URL": "https://ib.bizmrg.com",
+    "S3_ACCESS_KEY": "qjxce891bjELhvRb5FKnXB",
+    "S3_SECRET_KEY": "eCdwGcMpZtr2LCPCTHK1ZZZVpZjtap7Cp2onWHVZz5hU",
+    "S3_BUCKET_NAME": "roompex",
+
+    "BACKUP_TARGET_DIR": "world",
+    "BACKUP_INTERVAL": 5
+  },
+  "not_minecraft_profile": {
+
+  },
+  "pisoz": {
+
+  }
+}
